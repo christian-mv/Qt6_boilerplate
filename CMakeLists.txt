@@ -11,7 +11,7 @@ project(MyApp VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20) # This assumes your compiler is C++20 otherwise change the version here
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_CXX_EXTENSIONS OFF) # recommended off for portability.
 
 find_package(Qt6 COMPONENTS Widgets Core Quick REQUIRED) # add/remove your modules here
 

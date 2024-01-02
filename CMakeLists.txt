@@ -13,6 +13,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_CXX_EXTENSIONS OFF) # recommended off for portability.
 
+# Add this line for automatic MOC, UIC, and RCC processing
+set(CMAKE_AUTOMOC ON)
+
 find_package(Qt6 COMPONENTS Widgets Core Quick REQUIRED) # add/remove your modules here
 
 # Define the sources and resources
